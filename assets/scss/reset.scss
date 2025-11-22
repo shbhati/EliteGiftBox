@@ -110,3 +110,105 @@ h6,
 .product-size {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.modal-dialog {
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0px;
+    left: 50%;
+    min-width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        min-width: auto;
+        width: 320px;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        border: none;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .imageBox {
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            width: 45%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
+
+        }
+
+        .content {
+            padding: 40px;
+            width: 55%;
+
+
+            @media (max-width: 768px) {
+                padding: 20px;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .form-control {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .get-quote-button {
+                background: var(--primary-color);
+
+                border: none;
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                color: #fff;
+
+
+            }
+        }
+    }
+
+}
