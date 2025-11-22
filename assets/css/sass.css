@@ -361,6 +361,8 @@ header .navbar-nav .dropdown {
 
 .products-list {
   padding: 40px 0; }
+  .products-list.bg-gray {
+    background: #f8f8f8; }
   .products-list .align-items-center {
     margin-bottom: 20px; }
   .products-list .heading {
@@ -428,111 +430,82 @@ header .navbar-nav .dropdown {
         border-radius: 5px;
         margin-top: 10px; }
 
-.footer {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 40px 0 20px;
-  /* Social Media Icons */
-  /* Footer Bottom Section */ }
-  .footer .footer-content {
+.product-videos-section {
+  padding: 40px 0;
+  background: #f5fcff; }
+  .product-videos-section .heading {
     margin-bottom: 30px; }
-  .footer .footer-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-    text-transform: capitalize;
-    border-bottom: 1px dashed #e0e0e0;
-    padding-bottom: 10px; }
-  .footer .footer-info p {
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #000000; }
-    .footer .footer-info p strong {
-      font-weight: 600; }
-    .footer .footer-info p a {
-      color: #000000;
-      text-decoration: none; }
-      .footer .footer-info p a:hover {
-        text-decoration: underline; }
-  .footer .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .footer .footer-links li {
-      margin-bottom: 10px; }
-      .footer .footer-links li a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 14px;
-        transition: color 0.3s ease; }
-        .footer .footer-links li a:hover {
-          color: var(--primary-color);
-          text-decoration: underline; }
-  .footer .social-icons {
+  .product-videos-section .product-videos-swiper-wrapper {
+    position: relative;
+    padding: 0 50px; }
+    @media (max-width: 768px) {
+      .product-videos-section .product-videos-swiper-wrapper {
+        padding: 0 35px; } }
+    @media (max-width: 640px) {
+      .product-videos-section .product-videos-swiper-wrapper {
+        padding: 0 30px; } }
+  .product-videos-section .product-videos-swiper {
+    overflow: visible; }
+    .product-videos-section .product-videos-swiper .swiper-slide {
+      height: auto; }
+  .product-videos-section .product-video-item {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap; }
-    .footer .social-icons .social-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background-color: var(--primary-color);
+    flex-direction: column;
+    height: 100%; }
+    .product-videos-section .product-video-item:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-5px); }
+    .product-videos-section .product-video-item .product-video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #f5f5f5; }
+      .product-videos-section .product-video-item .product-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none; }
+    .product-videos-section .product-video-item .product-video-content {
+      padding: 16px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 16px; }
-      .footer .social-icons .social-icon:hover {
-        background-color: var(--primary-color);
-        color: #ffffff;
-        transform: translateY(-2px); }
-  .footer .footer-bottom {
-    border-top: 1px dashed #e0e0e0;
-    padding-top: 20px;
-    margin-top: 20px; }
-    .footer .footer-bottom .copyright {
-      margin: 0;
-      font-size: 14px;
-      color: #000000; }
-    .footer .footer-bottom .payment-methods {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 15px;
-      flex-wrap: wrap; }
-      .footer .footer-bottom .payment-methods .payment-label {
-        font-size: 14px;
+      flex-direction: column;
+      flex-grow: 1; }
+      .product-videos-section .product-video-item .product-video-content .product-video-title {
+        font-size: 22px;
+        font-weight: 500;
         color: #000000;
-        font-weight: 500; }
-      .footer .footer-bottom .payment-methods .payment-icons {
-        display: flex;
-        align-items: center;
-        gap: 12px; }
-        .footer .footer-bottom .payment-methods .payment-icons .payment-icon {
-          font-size: 32px;
-          color: #666666;
-          transition: color 0.3s ease; }
-          .footer .footer-bottom .payment-methods .payment-icons .payment-icon:hover {
-            color: var(--primary-color); }
-        .footer .footer-bottom .payment-methods .payment-icons .payment-text {
-          font-size: 14px;
-          color: #000000;
-          font-weight: 500; }
+        text-transform: capitalize;
+        margin: 20px 0px;
+        text-overflow: ellipsis; }
+      .product-videos-section .product-video-item .product-video-content .product-button {
+        background: var(--primary-color);
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: auto; }
+        .product-videos-section .product-video-item .product-video-content .product-button:hover {
+          background: var(--primary-color-dark);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+  .product-videos-section .swiper-button-next,
+  .product-videos-section .swiper-button-prev {
+    display: none; }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer {
-    padding: 30px 0 15px; }
-    .footer .footer-title {
-      font-size: 15px;
-      margin-bottom: 15px; }
-    .footer .footer-bottom .payment-methods {
-      justify-content: flex-start;
-      margin-top: 15px; } }
 .testimonials-section {
   padding: 60px 0;
   background: #f8f9fa; }
@@ -651,20 +624,6 @@ header .navbar-nav .dropdown {
       padding: 0 40px; }
     .testimonials-section .testimonials-swiper .testimonial-card {
       padding: 24px 20px; } }
-
-.contact-hero {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  position: relative; }
-  @media (max-width: 768px) {
-    .contact-hero {
-      height: 200px; } }
-  .contact-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
 
 .contactus-page {
   position: relative;
@@ -844,5 +803,111 @@ header .navbar-nav .dropdown {
           box-shadow: 0 4px 12px rgba(var(--primary-color), 0.3); }
         .contactus-page .contact-form-section .contact-form-wrapper .contact-form .btn-submit:active {
           transform: translateY(0); }
+
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 0 20px;
+  /* Social Media Icons */
+  /* Footer Bottom Section */ }
+  .footer .footer-content {
+    margin-bottom: 30px; }
+  .footer .footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 10px; }
+  .footer .footer-info p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000; }
+    .footer .footer-info p strong {
+      font-weight: 600; }
+    .footer .footer-info p a {
+      color: #000000;
+      text-decoration: none; }
+      .footer .footer-info p a:hover {
+        text-decoration: underline; }
+  .footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer .footer-links li {
+      margin-bottom: 10px; }
+      .footer .footer-links li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease; }
+        .footer .footer-links li a:hover {
+          color: var(--primary-color);
+          text-decoration: underline; }
+  .footer .social-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; }
+    .footer .social-icons .social-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 16px; }
+      .footer .social-icons .social-icon:hover {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        transform: translateY(-2px); }
+  .footer .footer-bottom {
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 20px;
+    margin-top: 20px; }
+    .footer .footer-bottom .copyright {
+      margin: 0;
+      font-size: 14px;
+      color: #000000; }
+    .footer .footer-bottom .payment-methods {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+      flex-wrap: wrap; }
+      .footer .footer-bottom .payment-methods .payment-label {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 500; }
+      .footer .footer-bottom .payment-methods .payment-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px; }
+        .footer .footer-bottom .payment-methods .payment-icons .payment-icon {
+          font-size: 32px;
+          color: #666666;
+          transition: color 0.3s ease; }
+          .footer .footer-bottom .payment-methods .payment-icons .payment-icon:hover {
+            color: var(--primary-color); }
+        .footer .footer-bottom .payment-methods .payment-icons .payment-text {
+          font-size: 14px;
+          color: #000000;
+          font-weight: 500; }
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 15px; }
+    .footer .footer-title {
+      font-size: 15px;
+      margin-bottom: 15px; }
+    .footer .footer-bottom .payment-methods {
+      justify-content: flex-start;
+      margin-top: 15px; } }
 
 /*# sourceMappingURL=sass.css.map */

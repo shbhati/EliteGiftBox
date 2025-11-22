@@ -400,7 +400,9 @@
     </div>
 
 
-    <div class="products-list">
+
+
+    <div class="products-list bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 d-flex align-items-center justify-content-between">
@@ -591,6 +593,116 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Videos Section -->
+    <div class="product-videos-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading text-center">Product Videos</h2>
+                </div>
+            </div>
+
+
+            <div class="product-videos-swiper-wrapper">
+                <div class="swiper product-videos-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                            <div class="product-video-item">
+                                <div class="product-video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/-zJc_WnHr9I"
+                                        title="Cardboard box┃cardboard ring boxes wholesale┃china jewelry packaging box paper manufacturer┃"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="product-video-content">
+                                    <h3 class="product-video-title">Premium Jewelry Box Collection</h3>
+                                    <button class="product-button">Get Quote</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="swiper-slide">
+                            <div class="product-video-item">
+                                <div class="product-video-wrapper">
+                                    <iframe width="471" height="838" src="https://www.youtube.com/embed/GyWQ2_Yd6ys"
+                                        title="Thank you , Molly! 🥰 #smallbusiness #asmr #order #packing  #asmrsounds #fyp"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="product-video-content">
+                                    <h3 class="product-video-title">Luxury Gift Box Designs</h3>
+                                    <button class="product-button">Get Quote</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="swiper-slide">
+                            <div class="product-video-item">
+                                <div class="product-video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/GyWQ2_Yd6ys"
+                                        title="Thank you , Molly! 🥰 #smallbusiness #asmr #order #packing  #asmrsounds #fyp"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="product-video-content">
+                                    <h3 class="product-video-title">Custom Packaging Solutions</h3>
+                                    <button class="product-button">Get Quote</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="swiper-slide">
+                            <div class="product-video-item">
+                                <div class="product-video-wrapper">
+                                    <iframe width="471" height="838" src="https://www.youtube.com/embed/GyWQ2_Yd6ys"
+                                        title="Thank you , Molly! 🥰 #smallbusiness #asmr #order #packing  #asmrsounds #fyp"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="product-video-content">
+                                    <h3 class="product-video-title">Luxury Gift Box Designs</h3>
+                                    <button class="product-button">Get Quote</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="swiper-slide">
+                            <div class="product-video-item">
+                                <div class="product-video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/GyWQ2_Yd6ys"
+                                        title="Thank you , Molly! 🥰 #smallbusiness #asmr #order #packing  #asmrsounds #fyp"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="product-video-content">
+                                    <h3 class="product-video-title">Custom Packaging Solutions</h3>
+                                    <button class="product-button">Get Quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -855,6 +967,7 @@
     <script>
         var heroSwiper = new Swiper('.hero-swiper', {
             loop: true,
+            centeredSlides: true,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -939,6 +1052,35 @@
                 },
                 1024: {
                     slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        // Product Videos Swiper
+        var productVideosSwiper = new Swiper('.product-videos-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            speed: 600,
+           navigation: false,
+            breakpoints: {
+
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 3,
                     spaceBetween: 30,
                 },
             },
