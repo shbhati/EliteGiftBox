@@ -1,0 +1,112 @@
+/* Custom Bootstrap Primary Color - Purple */
+:root {
+    --primary-color: #f8627b;
+    --bs-primary: #f8627b;
+    --bs-primary-rgb: 123, 44, 191;
+    --bs-primary-dark: #f8627b;
+    --bs-primary-light: #f8627b;
+}
+
+input,
+button {
+    outline: none;
+}
+
+/* Global Font Family - Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: var(--primary-color-dark);
+        color: #fff;
+        transform: translateY(-1px);
+    }
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+    text-transform: capitalize;
+
+    padding-bottom: 10px;
+}
+
+.wahtsapp-icon {
+    background: #25d366;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+
+    @media (max-width: 768px) {
+        bottom: 15px;
+        right: 15px;
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+    }
+
+    animation: pulse 2s infinite;
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    svg.svg-inline--fa.fa-whatsapp {
+        color: #f2f2f2;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.product-price,
+.product-Ideal,
+.product-size {
+    font-family: Arial, Helvetica, sans-serif;
+}
